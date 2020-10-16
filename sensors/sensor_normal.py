@@ -17,7 +17,7 @@ class NormalWeatherSensor(Sensor):
         self._stop = False
 
     def setup(self):
-        self._api_key = self.config.get('api_key', '75c0c1dc711c7e4318753da293516c9a')
+        self._api_key = self.config.get('api_key','error')
         self._city = self.config.get('city', 'Kuala Lumpur')
         pass
 
