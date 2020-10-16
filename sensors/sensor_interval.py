@@ -1,4 +1,3 @@
----
 import requests
 import eventlet   #concurrent networking library, not really sure 
 from st2reactor.sensor.base import PollingSensor    #impoty PollingSensor class in base folder
@@ -14,7 +13,7 @@ class WeatherSensor(PollingSensor):
         super(WeatherSensor, self).__init__(sensor_service=sensor_service, config=config, poll_interval=poll_interval)
 
         self._trigger_ref = 'weather.new_weather'
-        self._logger = self.sensor_service.get_logger(name=self.__class__.__name___)
+        self._logger = self.sensor_service.get_logger(name=self.__class__.__name__)
 
     def setup(self):
         self._api_key = self.config.get('api_key', None)

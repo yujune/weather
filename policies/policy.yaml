@@ -1,0 +1,9 @@
+---
+name: print_weather.concurrency
+pack: weather
+description: Limits the concurrent executions of the greet action.
+enabled: true
+resource_ref: weather.print_weather
+policy_type: action.concurrency
+parameters:
+    threshold: 10

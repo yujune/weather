@@ -3,7 +3,7 @@ import sys   # for what
 from st2common.runners.base_action import Action
 
 class PrintWeather(Action):
-    def run(self, situation):
+    def run(self, situation,situation_desc,temperature):
 
         self.logger.info('Getting weather data in KL, please be patient...')
 
@@ -12,4 +12,4 @@ class PrintWeather(Action):
             return(False, "Failed")
 
         self.logger.info('Action executed succesfully')
-        return(True, "The weather in KL: " + situation)
+        return(True, "The weather in KL: " + situation+"\nDescription: "+situation_desc+"\nTemperature: "+ temperature +"C\n")

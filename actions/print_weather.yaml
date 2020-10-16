@@ -14,4 +14,18 @@ parameters:
                 position: 0
                 default: "No weather data found"
 
+        situation_desc:
+                type: "string"
+                description: "The description of the weather in KL"
+                required: true
+                position: 1
+                default: "No description"
+
+        temperature:
+                type: "string"
+                description: "The temperature of the weather in celcius"
+                required: true
+                position: 2
+                default: "No temperature data found"
+
 
