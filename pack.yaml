@@ -1,0 +1,21 @@
+---
+name: weather
+
+description: This is a pack that will send the weather and temperature of Kuala Lumpur in a specific time interval.
+
+keywords:
+        - weather
+        - temperature
+
+version: 1.0.0
+
+python_versions:
+        - "2"
+        - "3"
+
+author: YuJune
+
+email: teeyj-wp17@student.tarc.edu.my
+
+contributors:
+        - "YuJune <teeyj-wp17@student.tarc.edu.my>"

@@ -1,0 +1,13 @@
+---
+
+name: weather_rule
+pack: weather
+description: Rule that firing on weather.event
+enabled: true
+trigger:
+        type: weather.new_weather
+
+action:
+        ref: weather.print_weather
+        parameters:
+                situation: "{{ trigger.weather_condition }}"

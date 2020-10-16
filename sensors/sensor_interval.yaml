@@ -1,0 +1,13 @@
+---
+class_name: "WeatherSensor" #point to its python class
+entry_point: "sensor_interval.py"
+description: "Sensor that emits triggers (weather condition of Kuala Lumpur) to stackstorm every 1 minutes"
+poll_interval: 60
+
+trigger_types:
+        - name: "new_weather"
+          description: "Trigger of KL's weather"
+          payload_schema:
+                  type: "object"
+
+

@@ -1,0 +1,16 @@
+---
+
+name: print_weather
+pack: weather
+runner_type: "python-script"
+description: "This print the weather condition of KL"
+enabled: true
+parameters:
+        situation:
+                type: "string"
+                description: "The weather conditon in KL"
+                required: true
+                position: 0
+                default: "No weather data found"
+
+

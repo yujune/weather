@@ -1,0 +1,14 @@
+---
+
+api_key:
+        description: "Your api key from openweather"
+        type: "string"
+        required: true
+        secret: true
+
+city:
+        description: "Your location"
+        type: "string"
+        required: true
+        default: 'Kuala Lumpur'
+
