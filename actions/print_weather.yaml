@@ -5,6 +5,7 @@ pack: weather
 runner_type: "python-script"
 description: "This print the weather condition of KL"
 enabled: true
+entry_point: "print_weather.py"
 parameters:
         situation:
                 type: "string"

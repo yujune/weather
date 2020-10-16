@@ -1,0 +1,6 @@
+---
+
+trigger: "weather.new_weather"
+payload:
+        weather_condition: "Sunny"
+        
