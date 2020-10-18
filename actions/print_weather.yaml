@@ -28,4 +28,12 @@ parameters:
                 position: 2
                 default: "No temperature data found"
 
+        location:
+                type: "string"
+                description: "The location of the weather"
+                required: true
+                position: 3
+                default: "Kuala Lumpur"
+
+
 

@@ -13,3 +13,4 @@ action:
                 situation: "{{ trigger.weather_condition }}"
                 situation_desc: "{{ trigger.weather_condition_desc }}"
                 temperature: "{{trigger.temperature}}"
+                location: "{{trigger.location}}"

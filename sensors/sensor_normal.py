@@ -31,7 +31,7 @@ class NormalWeatherSensor(Sensor):
             formatted_weather_desc = json_data['weather'][0]['description']
             formatted_temperature = json_data['main']['temp']
             formatted_temperature = int(formatted_temperature) - 273.15
-            payload = {'weather_condition':formatted_weather,'weather_condition_desc':formatted_weather_desc,'temperature':formatted_temperature,'count':int(count)+1}
+            payload = {'weather_condition':formatted_weather,'weather_condition_desc':formatted_weather_desc,'temperature':formatted_temperature,'location':self._city,'count':int(count)+1}
             #payload = {'weather_condition': 'sunny','count': int(count) + 1}
             self.sensor_service.dispatch(trigger = 'weather.new_weather', payload = payload)
             self.sensor_service.set_value('weather.count', payload['count']) #store key pair value in datastore
